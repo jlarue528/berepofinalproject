@@ -2,7 +2,6 @@
 
 const express = require('express');
 const bcrypt = require('bcrypt');
-const { restart } = require('nodemon');
 const router = express.Router();
 const { authenticateUser } = require('./auth-user');
 const { Courses, Users } = require('./models');
