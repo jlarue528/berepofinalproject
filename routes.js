@@ -20,7 +20,7 @@ function asyncHandler(cb){
 }
 
 // Get Users
-router.get('/api/users', authenticateUser, asyncHandler(async (req, res) => {
+router.get('/users', authenticateUser, asyncHandler(async (req, res) => {
         const user = req.currentUser;
         res.json({
             name: user.firstName,
@@ -31,7 +31,7 @@ router.get('/api/users', authenticateUser, asyncHandler(async (req, res) => {
 }));
 
 // Add Users
-router.post('/api/users', asyncHandler(async (req, res) => {
+router.post('/users', asyncHandler(async (req, res) => {
         let errors = [];
         let user = req.body;
         try {
