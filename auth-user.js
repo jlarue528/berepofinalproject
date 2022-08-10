@@ -1,7 +1,6 @@
 'use strict';
 
 const auth = require('basic-auth');
-const { restart } = require('nodemon');
 const { Users } = require('./models')
 const bcrypt = require('bcrypt');
 
